@@ -1,0 +1,186 @@
+* 
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+body 
+{
+
+    background-color: rgb(202, 201, 201);
+    
+}
+
+.kparts--nav 
+{
+    display: flex;
+    height: 60px;
+    background-color: black;
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kparts--first--div,.kparts--second--div
+{
+    display: flex;
+    gap:30px;
+    
+}
+
+.kparts--header 
+{
+    margin-top:10px;
+    height: 45px;
+    background-color: rgb(35, 77, 155);
+    padding-left: 260px;
+}
+
+.nav--but1
+{
+    padding: 10px 30px;
+    font-size: 1.05em;
+    font-weight: bold;
+    margin-right: -5px;
+    cursor: pointer;
+    color:black;
+}
+
+a:visited
+{
+    color:white;
+}
+
+a:link 
+{
+    color:white;
+}
+
+.fa-phone,.fa-envelope,.fa-location-dot,.fa-facebook
+{
+    margin-right:10px;
+    font-size: 1.05em;
+    cursor: pointer;
+}
+
+a 
+{
+    text-decoration: none;
+    color:black;
+}
+
+/* HERE ENDS COPY */
+
+.sect--grid 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sect--div
+{
+    width: 180px;
+    height: 330px;
+    border:1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+    margin-left: 25px;
+    margin-top:20px;    
+}
+
+.img--div
+{
+    width: 157px;
+    height: 180px;
+    border-bottom: 1px solid gray;
+}
+
+.img--div img 
+{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* HERE STARTS THE RESPONSIVNESS */
+
+@media screen and (max-width:631px)
+{
+    .kparts--nav 
+{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    background-color: black;
+    color:white;
+    
+    width: 100%;
+}
+
+.fa-phone
+    {
+        margin-right:-10px;
+        margin-left: 20px;
+    }
+
+.kparts--header
+
+{
+    margin-left: -180px;
+}
+
+.sect--grid 
+
+{
+    margin-left: 60px;
+}
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:780px) {
+    
+    .kparts--header
+    {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        
+        
+        
+        
+    }
+
+    .nav--but1
+    {
+        width: 200px;
+    }
+    
+   } 
+
+
+
+@media screen and (max-width:1085px) {
+ h1 
+ {
+    padding-top: 60px;
+ }
+ .kparts--header
+ {
+    background-color: rgb(202, 201, 201);
+ }
+ 
+
+} 

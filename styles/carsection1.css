@@ -1,0 +1,211 @@
+* 
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+body 
+{
+
+    
+    background-color: rgb(202, 201, 201);
+    
+}
+
+.kparts--nav 
+{
+    display: flex;
+    height: 60px;
+    background-color: black;
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kparts--first--div,.kparts--second--div
+{
+    display: flex;
+    gap:30px;
+    
+}
+
+.kparts--header 
+{
+    margin-top:10px;
+    height: 45px;
+    background-color: rgb(35, 77, 155);
+    padding-left: 260px;
+}
+
+.nav--but1 
+{
+    padding: 10px 30px;
+    font-size: 1.05em;
+    font-weight: bold;
+    margin-right: -5px;
+    cursor: pointer;
+    color:black;
+}
+
+a:visited
+{
+    color:white;
+}
+
+a:link 
+{
+    color:white;
+}
+
+.fa-phone,.fa-envelope,.fa-location-dot,.fa-facebook
+{
+    margin-right:10px;
+    font-size: 1.05em;
+    cursor: pointer;
+}
+
+a 
+{
+    text-decoration: none;
+    color:black;
+}
+
+/*  THIS IS THE COPY ONE */
+
+
+.hyundai--section 
+{
+    width: 400px;
+    height: 320px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.hyundai--section p 
+{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.hyundai--section--grid 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1200px;
+    margin:0 auto;
+    margin-top:50px;
+    gap:20px;
+    
+}
+
+.hyundai--section:hover img 
+{
+    scale: 1.1;
+}
+
+
+
+/* HERE STARTS THE RESPONSIVE */
+
+@media screen and (max-width:800px)
+{
+    .kparts--h1 
+    {
+        padding-top:80px;
+    }
+
+    .kparts--header
+    {
+        margin-left: -170px;
+        
+    }
+
+
+    .hyundai--section 
+    {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hyundai--section img 
+    {
+        width: 100%;
+    }
+
+    .fa-phone
+    {
+        margin-right:10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1140px) {
+
+    .kparts--header
+    {
+        flex-wrap: wrap;
+        display: flex;
+        gap:30px;
+        background-color: rgb(202, 201, 201);
+        height: 200px;
+        align-items: center;
+        justify-content: start;
+        
+       
+    }
+
+    .nav--but1
+    {
+        width: 200px;
+
+    }
+
+    .kparts--nav
+    {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+        width: 100%;
+        padding:15px;
+        height: 120px;
+        
+    }
+
+    .hyundai--section--grid 
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9em;
+       
+    }
+
+    
+
+}

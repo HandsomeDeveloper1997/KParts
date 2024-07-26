@@ -1,0 +1,229 @@
+* 
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+}
+
+
+body 
+{
+
+    
+    background-color: rgb(202, 201, 201);
+}
+
+.kparts--nav 
+{
+    display: flex;
+    height: 60px;
+    background-color: black;
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kparts--first--div,.kparts--second--div
+{
+    display: flex;
+    gap:30px;
+    
+}
+
+.kparts--header 
+{
+    margin-top:10px;
+    height: 45px;
+    background-color: rgb(35, 77, 155);
+    padding-left: 260px;
+}
+
+.nav--but1 
+{
+    padding: 10px 30px;
+    font-size: 1.05em;
+    font-weight: bold;
+    margin-right: -5px;
+    cursor: pointer;
+    color:black;
+}
+
+a:visited
+{
+    color:white;
+}
+
+a:link 
+{
+    color:white;
+}
+
+.fa-phone,.fa-envelope,.fa-location-dot,.fa-facebook
+{
+    margin-right:10px;
+    font-size: 1.05em;
+    cursor: pointer;
+}
+
+
+.main 
+{
+    display: flex;
+    width: 1200px;
+    margin:0 auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:50px;
+    gap:50px;
+}
+
+.main--div 
+{
+    width: 400px;
+    height: 200px;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3em;
+    border-radius:70px;
+}
+
+.main > a
+{
+    color:black;
+    text-decoration: none;
+}
+
+.hello
+{
+    font-size:4em;
+}
+
+.fa-facebook:hover 
+{
+    color:blue;
+    cursor: pointer;
+}
+
+.fa-whatsapp:hover 
+{
+    color:green;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width:425px) {
+    .kparts--nav > div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8em;
+        justify-content: center;
+    }
+
+    .kparts--flex--resp span 
+    {
+        font-size: 0.8em;
+    }
+
+    .main--div
+    {
+        width: 250px;
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:631px)
+{
+    .kparts--nav 
+{
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    background-color: black;
+    color:white;
+    
+}
+
+.fa-phone
+    {
+        margin-right:-10px;
+        margin-left: 20px;
+    }
+
+.kparts--header
+
+{
+    margin-left: -140px;
+}
+
+.sect--grid 
+
+{
+    margin-left: 60px;
+}
+
+.car--flex img
+{
+    width: 250px;
+}
+    
+}
+
+
+
+
+
+@media screen and (max-width:780px) {
+    
+    .kparts--header
+    {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        background-color: rgb(202, 201, 201);
+        max-width: 100%;
+        
+        
+    }
+
+    .nav--but1
+    {
+        width: 200px;
+    }
+
+    .car--flex img 
+    {
+        height: 300px;
+
+    }
+
+    
+   } 
+
+
+@media screen and (max-width:1145px)
+{
+    .main 
+    {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    
+}
